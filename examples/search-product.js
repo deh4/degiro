@@ -2,8 +2,8 @@ const DeGiro = require('..');
 
 (async () => {
     const degiro = DeGiro.create({
-        // username: 'your-username',
-        // password: 'your-password',
+         username: '',
+         password: '',
     });
 
     await degiro.login();
