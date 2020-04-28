@@ -8,7 +8,18 @@ DeGiro is Europe's fastest growing online stockbroker. DeGiro distinguishes itse
 fees to retail investors.
 
 :warning: DeGiro could change their API at any moment, if something is not working, please open an issue.
+## debian openssl issue
+Need to increase SECLEVEL from 2 to 1 in following file
+```
+etc/ssl/openssl.cnf
+```
+Find follwing line and change it.
 
+```
+[system_default_sect]
+MinProtocol = TLSv1.2
+CipherString = DEFAULT@SECLEVEL=1
+```
 ## Install
 
 ```bash
